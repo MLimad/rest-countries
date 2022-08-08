@@ -2,7 +2,7 @@ import React from 'react'
 
 function Options({selectValue}) {
 
-    const list = ["africa","america","asia","europe","oceania"]
+    const list = ["all","africa","america","asia","europe","oceania"]
 
   return (
     <ul className="options">

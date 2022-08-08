@@ -2,7 +2,8 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav>
+    <header>
+      <nav>
         <div className="container">
 
             <h1>where in the world?</h1>
@@ -10,6 +11,7 @@ function Navbar() {
              
         </div>
     </nav>
+    </header>
   )
 }
 

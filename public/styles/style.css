@@ -90,6 +90,7 @@ nav .container button i {
   list-style: none;
   top: 60px;
   left: 0;
+  background-color: hsl(0deg, 0%, 100%);
   width: 200px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -236,6 +237,7 @@ button i {
 .dark {
   background-color: hsl(207deg, 26%, 17%) !important;
   color: hsl(0deg, 0%, 98%);
+  transition: all 0.3s ease-in-out;
 }
 .dark button {
   background-color: hsl(209deg, 23%, 22%);

@@ -9,7 +9,7 @@ function Country({name,official,population,region,flags,capital,formatNumber,sub
 
             <Link style={{textDecoration: 'none'}} to={`/country-details/${name}`} state={{ name: name ,flags:flags, population:population, region:region, capital:capital, subregion:subregion,domain:domain,currencies:currencies,languages:languages,official:official,borders:borders}}  >
             
-              <div className="country">
+              <article className="country">
               <div className="flag-country">
                   <img src={flags} alt={name} />
               </div>
@@ -21,7 +21,7 @@ function Country({name,official,population,region,flags,capital,formatNumber,sub
                       <li><b>capital</b> {capital}</li>
                   </ul>
               </div>
-              </div>
+              </article>
 
          </Link>
 

@@ -17,7 +17,6 @@ function Home() {
   const [data,setData] =  useState([])
   const [search,setSearch] = useState("kuwait")
 
-
  
 
   const bindSearch = (e) =>{
@@ -66,14 +65,29 @@ function Home() {
 
   useEffect(()=>{
 
+    if (filterValue === "all") {
+      const url = `https://restcountries.com/v3.1/all`;
+
+      axios.get(url).then(res=>{
+          setData(res.data)
+          if(data.length <= 0 ){
+            console.log('data not loaded yet');
+          }
+        }).catch(error=>console.log(error))
+    }else{
+
       const url = `https://restcountries.com/v3.1/region/${filterValue}`;
 
-    axios.get(url).then(res=>{
-        setData(res.data)
-        if(data.length <= 0 ){
-          console.log('data not loaded yet');
-        }
-      }).catch(error=>console.log(error))
+      axios.get(url).then(res=>{
+          setData(res.data)
+          if(data.length <= 0 ){
+            console.log('data not loaded yet');
+          }
+        }).catch(error=>console.log(error))
+
+    }
+
+    
 
 
   },[filterValue])

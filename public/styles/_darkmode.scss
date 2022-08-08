@@ -26,6 +26,8 @@
 .dark{
     background-color: $Very-Dark !important;
     color: $Very-Light;
+    transition:  all  0.3s  ease-in-out;
+
     button{
         background-color: $Dark-Blue;
         color: $Very-Light;
