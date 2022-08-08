@@ -1,0 +1,74 @@
+#user-actions{
+   font-size: 14px;
+    padding: 40px 10px;
+    .form-group{
+        position: relative;
+    }
+    .icon-search{
+        position: absolute;
+        top: 17px;
+        left: 22px;
+        color: $Dark-Gray;
+    
+    }
+    input[type="text"]{
+        padding-left: 50px;
+    }
+    .select-box{
+        width: 200px;
+        float: right;
+        padding: 16px;
+        text-transform: capitalize;
+        background-color: $White;
+        cursor: pointer;
+        font-weight: 600;
+        user-select: none;
+        position: relative;
+        color: $Very-Dark-text;
+        @media only screen and (max-width: 600px) {
+            & {
+              margin-top: 10px;
+              width: 100%;
+            }
+          }
+        .input{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                margin: 0;
+            }
+        }
+
+        .options{
+            position: absolute;
+            list-style: none;
+            top: 60px;
+            left: 0;
+            // background-color: hsl(0deg, 0%, 100%);
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            display: block;
+            z-index: 90;
+            @media only screen and (max-width: 600px) {
+                & {
+                  width: 100%;
+                }
+              }
+            li{
+                
+                margin: 10px 0;
+                text-transform: capitalize;
+            }
+
+        }
+       
+    }
+    input[type="text"],.select-box{
+        border-radius: 5px;
+        border: 0;
+        height: 56px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}

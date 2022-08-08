@@ -1,0 +1,64 @@
+.light{
+    background-color: $Very-Light;
+    color: black;
+    nav{
+            background-color: $White;
+    }
+}
+
+#darkToggler{
+   
+    position: absolute;
+    top: 14px;
+    right: 136px;
+    button{
+        padding: 5px 10px;
+    }
+    @media only screen and (max-width: 375px) {
+        & {
+            top: 14px;
+            right: 10px;
+        }
+      }
+
+}
+
+.dark{
+    background-color: $Very-Dark !important;
+    color: $Very-Light;
+    button{
+        background-color: $Dark-Blue;
+        color: $Very-Light;
+    }
+    nav{
+        background-color: $Dark-Blue;
+        color: $Very-Light;
+    }
+    .info-country{
+        background-color: $Dark-Blue;
+        h5,ul li ,ul li b{
+            color: $Very-Light !important;
+        }
+    }
+
+    .select-box{
+        background-color: $Dark-Blue !important;
+        color: $Very-Light !important;
+    }
+
+    input{
+        background-color: $Dark-Blue !important;
+        color: $Very-Light !important;
+    }
+
+    .options{
+        background-color: $Dark-Blue !important;
+        color: $Very-Light !important;
+    }
+}
+
+.dark-blue{
+    background-color:$Dark-Blue;
+    color: $Very-Light;    
+    
+}
